@@ -16,7 +16,7 @@ const LoginPage = () => {
   }
   return (
     <div className="py-4">
-      <h2 className="text-2xl text-center">Login Page</h2>
+      <h2 className="text-2xl text-center">Старонка аўтарызацыі:</h2>
       <div className="max-w-xs mx-auto flex flex-col gap-2">
         <input
           type="email"
@@ -36,10 +36,10 @@ const LoginPage = () => {
           className="bg-slate-400 py-1 px-2 rounded-md text-white"
           onClick={handleLogin}
         >
-          Login
+          Увайсьці
         </button>
         <p className="text-center">
-          Don't have an account? <Link to="/register">Register here</Link>
+          Ня маеш акаўнта? <Link to="/register">Зарэгіструйся тут!</Link>
         </p>
       </div>
     </div>

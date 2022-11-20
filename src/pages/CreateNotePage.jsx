@@ -16,7 +16,7 @@ const CreateNotePage = () => {
     return (
         <div className="py-4">
             <BackBtn to='/notes' />
-            <h2 className="text-2xl text-center">Create a note</h2>
+            <h2 className="text-2xl text-center">Стварыць заметку:</h2>
             <div className="max-w-xs mx-auto flex flex-col gap-2">
                 <input
                     type="email"

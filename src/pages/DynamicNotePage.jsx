@@ -17,15 +17,15 @@ const DynamicNotePage = () => {
     return (
         <>
             <BackBtn to='/notes' />
-            <Suspense fallback={<p>Loading...</p>}>
+            <Suspense fallback={<p>Прагружаю...</p>}>
                 <Await resolve={notePromise} errorElement={
                     <>
                         <h1 className='text-3xl font-bold text-center'>
-                            No note with ID {id}
+                            Няма заметкі з такім ID {id}
                         </h1>
                         <p className='text-2xl text-center'>
 
-                            <Link to={"/notes"} >To notes list</Link>
+                            <Link to={"/notes"} >Спіс заметак:</Link>
                         </p>
                     </>
                 }>

@@ -15,7 +15,7 @@ const NotesPage = () => {
     return (
         <div className='flex flex-col gap-2'>
             <div className='border-gray-200 border max-w-xs px-2 py-1 text-xl'>
-                <Link to='/notes/new'>Add new</Link>
+                <Link to='/notes/new'>Дадаць новую:</Link>
             </div>
             {notes.map((note) => {
                 const handleDeleteNote = () => {

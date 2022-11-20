@@ -20,7 +20,7 @@ const RegisterPage = () => {
   }
   return (
     <div className="py-4">
-      <h2 className="text-2xl text-center">Register Page</h2>
+      <h2 className="text-2xl text-center">Старонка рэгістрацыі:</h2>
       <div className="max-w-xs mx-auto flex flex-col gap-2">
         <input
           type="email"
@@ -47,10 +47,10 @@ const RegisterPage = () => {
           className="bg-slate-400 py-1 px-2 rounded-md text-white"
           onClick={handleRegister}
         >
-          Login
+          Зарэгістравацца
         </button>
         <p className="text-center">
-          Already have an account? <Link to="/login">Login here</Link>
+          Ужо маеце акаўнт? <Link to="/login">Увайсьці</Link>
         </p>
       </div>
     </div>

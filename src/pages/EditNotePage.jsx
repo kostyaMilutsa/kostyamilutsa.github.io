@@ -19,7 +19,7 @@ const EditNotePage = () => {
     }, [notePromise])
     return (
         <div className="py-4">
-            <h2 className="text-2xl text-center">Edit Note Page</h2>
+            <h2 className="text-2xl text-center">Старонка рэдагаваньня заметак:</h2>
             <div className="max-w-xs mx-auto flex flex-col gap-2">
                 <input
                     type="email"
@@ -38,7 +38,7 @@ const EditNotePage = () => {
                     className="bg-slate-400 py-1 px-2 rounded-md text-white"
                     onClick={handleSave}
                 >
-                    Save
+                    Захаваць
                 </button>
             </div>
         </div>
