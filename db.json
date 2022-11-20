@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "user1@gmail.com",
+      "password": "1234",
+      "createdAt": "2022-11-04T14:36:10.980Z"
+    },
+    {
+      "email": "j1h23h@email.com",
+      "password": "1234",
+      "createdAt": "2022-11-20T12:25:49.665Z",
+      "id": 2
+    }
+  ],
+  "notes": [
+    {
+      "userId": 1,
+      "title": "My new Note",
+      "body": "123",
+      "createdAt": "2022-11-20T11:52:02.170Z",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "title": "1231",
+      "body": "231231",
+      "createdAt": "2022-11-20T12:16:24.002Z",
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "title": "123",
+      "body": "123",
+      "createdAt": "2022-11-20T12:26:37.522Z",
+      "id": 4
+    }
+  ]
+}
