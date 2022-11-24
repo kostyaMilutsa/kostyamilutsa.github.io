@@ -1,6 +1,6 @@
 export const getNotesByUserId = (id) =>
   fetch(
-    `http://localhost:5000/notes?_sort=createdAt&_order=desc&userId=${id}`
+    `https://my-json-server.typicode.com/kostyamilutsa/apiAuth/notes?_sort=createdAt&_order=desc&userId=${id}`
   ).then((r) => r.json());
 
 export const getNoteById = (id) => {
@@ -12,7 +12,7 @@ export const getNoteById = (id) => {
 
 export const createNote = ({ userId, title, body }) => {
   const createdAt = new Date().toISOString();
-  return fetch(`http://localhost:5000/notes`, {
+  return fetch(`https://my-json-server.typicode.com/kostyamilutsa/apiAuth/notes`, {
     method: "POST",
     body: JSON.stringify({ userId, title, body, createdAt }),
     headers: {
@@ -22,7 +22,7 @@ export const createNote = ({ userId, title, body }) => {
 };
 
 export const editNote = ({ id, title, body }) => {
-  return fetch(`http://localhost:5000/notes/${id}`, {
+  return fetch(`https://my-json-server.typicode.com/kostyamilutsa/apiAuth/notes/${id}`, {
     method: "PATCH",
     body: JSON.stringify({ title, body }),
     headers: {
@@ -32,7 +32,7 @@ export const editNote = ({ id, title, body }) => {
 };
 
 export const deleteNote = (id) => {
-  return fetch(`http://localhost:5000/notes/${id}`, {
+  return fetch(`https://my-json-server.typicode.com/kostyamilutsa/apiAuth/notes/${id}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
