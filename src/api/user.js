@@ -1,5 +1,5 @@
 export const loginUser = (email, password) =>
-  fetch(`http://localhost:5000/users?email=${email}&password=${password}`)
+  fetch(`https://my-json-server.typicode.com/kostyamilutsa/apiAuth/users?email=${email}&password=${password}`)
     .then((r) => r.json())
     .then((v) => {
       if (v.length === 1) return v[0];
@@ -8,7 +8,7 @@ export const loginUser = (email, password) =>
 
 export const registerUser = (email, password) => {
   const createdAt = new Date().toISOString();
-  return fetch(`http://localhost:5000/users`, {
+  return fetch(`https://my-json-server.typicode.com/kostyamilutsa/apiAuth/users`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
